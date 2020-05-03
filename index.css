@@ -22,7 +22,7 @@
     color: white;
 }
 .section{
-    background-image:url(1st.jpg);
+    background-image:url(Images/1st.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 20px 25px 0 rgba(0, 0, 0, 0.19);
@@ -42,14 +42,14 @@
     
 }
 .services-section{
-    background-image: url(2222.jpg);
+    background-image: url(Images/2222.jpg);
     
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 .experience-section{
-    background-image: url(new\ more-chats-with-pure-chat.jpg);
+    background-image: url(Images/new\ more-chats-with-pure-chat.jpg);
     
     background-size: cover;
     background-repeat: no-repeat;
