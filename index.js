@@ -1,3 +1,5 @@
+
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -55,4 +57,43 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var positiontop = $(document).scrollTop();
+        console.log(positiontop);
 
+        if((positiontop > 330) && (positiontop < 1168)){
+            $('#service-head').addClass('animate__animated animate__rollIn')
+            $('#card-one').addClass('animate__animated animate__jackInTheBox')
+            $('#card-two').addClass('animate__animated animate__jackInTheBox')
+            $('#card-three').addClass('animate__animated animate__jackInTheBox')
+        }
+
+        if((positiontop > 736) && (positiontop < 1168)){
+            $('#card-four').addClass('animate__animated animate__jackInTheBox')
+            $('#card-five').addClass('animate__animated animate__jackInTheBox')
+            $('#card-six').addClass('animate__animated animate__jackInTheBox')
+        }
+
+        if((positiontop > 1232) && (positiontop < 1786)){
+            $('#exp-head').addClass('animate__animated animate__rollIn')
+            $('#exp-card-one').addClass('animate__animated animate__lightSpeedInLeft')
+            $('#exp-card-two').addClass('animate__animated animate__bounceInUp')
+            $('#exp-card-three').addClass('animate__animated animate__lightSpeedInRight')
+        }
+        if((positiontop > 1537) && (positiontop < 1786)){
+            $('#exp-card-four').addClass('animate__animated animate__lightSpeedInLeft')
+            
+            $('#exp-card-five').addClass('animate__animated animate__lightSpeedInRight')
+        }
+
+        if((positiontop > 1860) && (positiontop < 1995)){
+            $('#recent-head').addClass('animate__animated  animate__rollIn')
+        }
+
+        if((positiontop > 2608) && (positiontop < 2666)){
+            $('#feedback-ico').addClass('animate__animated  animate__heartBeat animate__repeat-3')
+        }
+
+    })
+});

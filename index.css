@@ -28,6 +28,7 @@
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 20px 25px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
     min-height: 700px;
+    background-attachment: fixed;
 
 }
 .intro{
@@ -119,12 +120,37 @@
 }
 
 .navbar-nav > li > a:hover, .nav > li > a:focus {
-    background-color: rgb(71, 94, 194);
+    background-color: #88ce04;
     text-decoration: none;
     border-radius: 10px;
   }
 
+.home-fb-ico:hover{
+    color:#0c57f8 !important;
 
+}
+.home-twitter-ico:hover{
+    color:#4ab8f8 !important;
 
+}
+.home-ytb-ico:hover{
+    color:rgba(255, 0, 0, 0.685) !important;
+
+}
+.home-insta-ico:hover{
+    color:#fd00ad !important;
+
+}
+.header-box{
+    border-bottom: #88ce04;
+    border-bottom-style:inset;
+    border-bottom-width: 3px;
+    background-color:#262626;
+}
+.head-img{
+    display: block;
+    
+    width: 30%;
+}
 
 
