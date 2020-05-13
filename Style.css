@@ -22,7 +22,7 @@
     color: white;
 }
 .section-home{
-    background-image:url(Images/1st.jpg);
+    background-image:url(Images/1st.jpg)!important;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 20px 25px 0 rgba(0, 0, 0, 0.19);
@@ -150,7 +150,7 @@
 .img-responsive {
     height: auto;
     width: auto;
-    max-height: 72px;
+    max-height: 65px;
     max-width: 250px;
 }
 
