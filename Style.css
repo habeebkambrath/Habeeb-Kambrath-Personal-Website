@@ -30,17 +30,6 @@
     min-height: 700px;
     background-attachment: fixed;
 }
-#background_wrap {
-    z-index: -1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-size: 100%;
-    background-image: url('xx.jpg');
-    background-attachment: fixed;
-}
 
 
 .intro{
