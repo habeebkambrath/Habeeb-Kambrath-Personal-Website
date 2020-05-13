@@ -147,11 +147,13 @@
     border-bottom-width: 3px;
     background-color:#262626;
 }
-.head-img{
-    display: block;
-    
-    width: 30%;
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
 }
+
 
 
 
