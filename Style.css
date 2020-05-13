@@ -52,10 +52,9 @@
 }
 .experience-section{
     background-image: url(Images/new\ more-chats-with-pure-chat.jpg);
-    
     background-size: cover;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
 }
 
 .card{
@@ -77,6 +76,7 @@
     
     width: 100%;
     margin-top: 100px;
+    background-color: #212934;
 
 }
 .copyright{
@@ -120,7 +120,7 @@
 }
 
 .navbar-nav > li > a:hover, .nav > li > a:focus {
-    background-color: #88ce04;
+    background-color: #007bff;
     text-decoration: none;
     border-radius: 10px;
   }
@@ -142,7 +142,7 @@
 
 }
 .header-box{
-    border-bottom: #88ce04;
+    border-bottom: #007bff;
     border-bottom-style:inset;
     border-bottom-width: 3px;
     background-color:#262626;
@@ -152,5 +152,7 @@
     
     width: 30%;
 }
+
+
 
 

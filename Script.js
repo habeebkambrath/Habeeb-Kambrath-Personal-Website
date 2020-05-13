@@ -94,6 +94,7 @@ $(document).ready(function(){
         if((positiontop > 2608) && (positiontop < 2666)){
             $('#feedback-ico').addClass('animate__animated  animate__heartBeat animate__repeat-3')
         }
+       
 
     })
 });
