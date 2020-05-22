@@ -1,5 +1,4 @@
 
-
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -97,4 +96,85 @@ $(document).ready(function(){
        
 
     })
+
 });
+
+$(document).ready(function(){
+    $("#contact-me-form").validate({
+        rules:{
+            fullname:{
+                required:true,
+                
+            },
+            maildid:{
+                required:true,
+                email:true
+            },
+            txtmsg:{
+                required:true,
+                minlength:25,
+            },
+            mobnumber:{
+                required:true,
+                matches: "[0-9]+",  // <-- no such method called "matches"!
+                maxlength:10
+            }
+        },
+        messages:{
+            fullname:{
+                required:"This field is required.",
+            },
+            txtmsg:{
+                required:"This field is required.",
+                minlength:"Enter at least 25 words"
+            }
+        }
+       
+    })
+});
+
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+
+var interval;
+function startTicker()
+{
+    $("#ticker01 li:first").slideUp(function(){
+        $(this).appendTo($("#ticker01")).slideDown();
+    });
+}
+
+function stopTicker()
+{
+    clearInterval(interval);
+}
+
+$(document).ready(function(){
+    interval = setInterval(startTicker, 3000);
+    $("#ticker01").hover(function(){
+        stopTicker();
+    }, function(){
+        interval = setInterval(startTicker, 3000);
+    });
+});
+
+
+
+
+
+
