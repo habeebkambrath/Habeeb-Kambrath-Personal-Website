@@ -53,7 +53,7 @@
 
 }
 .experience-section{
-    background-image: url(Images/new\ more-chats-with-pure-chat.jpg);
+    background-image: url(Images/2nd.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -175,15 +175,15 @@
     position: fixed;
     bottom: 50px;
     right: 0;
-    background-color: #DDD;
-    color: #555;
+    background-color: #007bff;
+    color: white;
     text-align: center;
     font-size: 30px;
     text-decoration: none;
 }
 #back2Top:hover {
-    background-color: #DDF;
-    color: #000;
+    background-color: #007bff;
+    color: white;
 }
 #contact-me-form .error { color:tomato;}
 .my-articles{
