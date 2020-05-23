@@ -61,36 +61,40 @@ $(document).ready(function(){
         var positiontop = $(document).scrollTop();
         console.log(positiontop);
 
-        if((positiontop > 330) && (positiontop < 1168)){
+        if((positiontop > 405) && (positiontop < 654)){
             $('#service-head').addClass('animate__animated animate__rollIn')
             $('#card-one').addClass('animate__animated animate__jackInTheBox')
             $('#card-two').addClass('animate__animated animate__jackInTheBox')
             $('#card-three').addClass('animate__animated animate__jackInTheBox')
         }
 
-        if((positiontop > 736) && (positiontop < 1168)){
+        if((positiontop > 752) && (positiontop < 988)){
             $('#card-four').addClass('animate__animated animate__jackInTheBox')
             $('#card-five').addClass('animate__animated animate__jackInTheBox')
             $('#card-six').addClass('animate__animated animate__jackInTheBox')
         }
 
-        if((positiontop > 1232) && (positiontop < 1786)){
+        if((positiontop > 1326) && (positiontop < 1486)){
             $('#exp-head').addClass('animate__animated animate__rollIn')
             $('#exp-card-one').addClass('animate__animated animate__lightSpeedInLeft')
             $('#exp-card-two').addClass('animate__animated animate__bounceInUp')
             $('#exp-card-three').addClass('animate__animated animate__lightSpeedInRight')
         }
-        if((positiontop > 1537) && (positiontop < 1786)){
+        if((positiontop > 1646) && (positiontop < 1846)){
             $('#exp-card-four').addClass('animate__animated animate__lightSpeedInLeft')
             
             $('#exp-card-five').addClass('animate__animated animate__lightSpeedInRight')
         }
 
-        if((positiontop > 1860) && (positiontop < 1995)){
+        if((positiontop > 2043) && (positiontop < 2271)){
             $('#recent-head').addClass('animate__animated  animate__rollIn')
         }
 
-        if((positiontop > 2608) && (positiontop < 2666)){
+        if((positiontop > 2647) && (positiontop < 2780)){
+            $('#article-head').addClass('animate__animated  animate__rollIn')
+        }
+
+        if((positiontop > 3407) && (positiontop < 3422)){
             $('#feedback-ico').addClass('animate__animated  animate__heartBeat animate__repeat-3')
         }
        
@@ -115,9 +119,7 @@ $(document).ready(function(){
                 minlength:25,
             },
             mobnumber:{
-                required:true,
-                matches: "[0-9]+",  // <-- no such method called "matches"!
-                maxlength:10
+                matches: "[0-9]+", 
             }
         },
         messages:{
