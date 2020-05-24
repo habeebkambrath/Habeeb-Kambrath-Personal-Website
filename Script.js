@@ -103,7 +103,7 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
+$("#send-btn").on('click', function() {
     $("#contact-me-form").validate({
         rules:{
             fullname:{
@@ -122,6 +122,7 @@ $(document).ready(function(){
                 matches: "[0-9]+",
             }
         },
+        
         messages:{
             fullname:{
                 required:"This field is required.",
@@ -130,7 +131,10 @@ $(document).ready(function(){
                 required:"This field is required.",
                 minlength:"Enter at least 25 words"
             }
+            
         }
+        
+        
        
     })
 });
