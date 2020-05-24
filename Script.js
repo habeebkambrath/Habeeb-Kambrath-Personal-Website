@@ -119,7 +119,7 @@ $(document).ready(function(){
                 minlength:25,
             },
             mobnumber:{
-                matches: "[0-9]+", 
+                matches: "[0-9]+",
             }
         },
         messages:{
