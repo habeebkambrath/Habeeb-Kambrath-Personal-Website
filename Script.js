@@ -103,7 +103,7 @@ $(document).ready(function(){
 
 });
 
-$("#send-btn").on('click', function() {
+$(document).ready(function() { 
     $("#contact-me-form").validate({
         rules:{
             fullname:{
@@ -119,7 +119,7 @@ $("#send-btn").on('click', function() {
                 minlength:25,
             },
             mobnumber:{
-                matches: "[0-9]+",
+                required:true,
             }
         },
         
@@ -137,7 +137,10 @@ $("#send-btn").on('click', function() {
         
        
     })
+    
 });
+
+
 
 
 $(window).scroll(function() {

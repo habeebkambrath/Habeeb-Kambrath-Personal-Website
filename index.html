@@ -360,14 +360,14 @@
     <div class="container">
         <div class="row">
           
-          <div class="col-md-6 col-6 p-4 contact-meleft text-center">
+          <div class="col-md-6 col-6 p-5 contact-meleft text-center">
             <i class="fas fa-comments fa-5x " style="color: #007bff;" id="feedback-ico"></i>
             <p class="cntct text-primary" >Contact me.</p>
             <p class="feedback-txt text-primary" >I'd love your feedback!</p>
           </div>
           
           <div class="col-md-6 col-6 p-4">
-            <form id="contact-me-form" action="mailto:habeebkambrath@gmail.com" method="POST" enctype="multipart/form-data">
+            <form action="mailto:habeebkambrath@gmail.com" method="POST" enctype="multipart/form-data" id="contact-me-form">
               <div class="form-group row">
                 <label for="inputname" class="col-sm-2 col-form-label form-labels">Name</label>
                 <div class="col-sm-10">
@@ -392,15 +392,11 @@
                   <textarea name="txtmsg" class="boxes col-md-12 form-control" rows="5" placeholder="Please enter your feedback or message here..."></textarea>
                 </div>
               </div>
-              
-              
               <div class="form-group row">
                 <div class="col-md-12">
                   <button type="submit" id="send-btn" class="btn btn-success" style="float: right;"  >Send</button>
                 </div>
               </div>
-              
-
             </form>
           </div>
         </div>
@@ -428,6 +424,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
 <script src="https://kit.fontawesome.com/30c7db20e9.js" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
