@@ -120,12 +120,17 @@ $(document).ready(function() {
             },
             mobnumber:{
                 required:true,
+                number: true,
+                minlength:10,
             }
         },
         
         messages:{
             fullname:{
                 required:"This field is required.",
+            },
+            mobnumber:{
+                minlength:"Please enter at least 10 Numbers."
             },
             txtmsg:{
                 required:"This field is required.",

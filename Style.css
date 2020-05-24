@@ -185,7 +185,7 @@
     background-color: #007bff;
     color: white;
 }
-#contact-me-form .error { color:tomato;}
+
 .my-articles{
     background-image: url(Images/newssection.jpg);
     background-size:cover;
@@ -244,6 +244,12 @@
     color: white;
 }
 
+label.error {
+    color:tomato;
+    font-size: 1rem;
+    display: block;
+    
+}
 
 
 
