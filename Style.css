@@ -38,7 +38,8 @@
 }
 .page-heads{
     margin-top: 30px;
-    text-align-last: center;
+    
+    text-align: center;
     font-family: 'Acme', sans-serif;
     font-size: 50px;
     

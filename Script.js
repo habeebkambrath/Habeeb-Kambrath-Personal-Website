@@ -116,25 +116,17 @@ $(document).ready(function() {
             },
             txtmsg:{
                 required:true,
-                minlength:25,
             },
-            mobnumber:{
-                required:true,
-                number: true,
-                minlength:10,
-            }
+            
         },
         
         messages:{
             fullname:{
                 required:"This field is required.",
             },
-            mobnumber:{
-                minlength:"Please enter at least 10 Numbers."
-            },
+            
             txtmsg:{
                 required:"This field is required.",
-                minlength:"Enter at least 25 words"
             }
             
         }
@@ -146,6 +138,16 @@ $(document).ready(function() {
 });
 
 
+
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+});
 
 
 $(window).scroll(function() {
