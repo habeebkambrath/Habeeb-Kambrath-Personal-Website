@@ -19,6 +19,8 @@
     <meta property="og:description" content="Personal Website of Habeeb Kambrath.The Website Developed and Designed by Habeeb Kambrath"/>
     <meta property="og:image" content="https://i.postimg.cc/LsNhTCwy/hhhh-test.png"/>
     <meta name="google-site-verification" content="cgv-RhWRTVjVSKKbvwh4Y_L1R1cT2i7CptgrLphcJJo" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   
 
     
@@ -369,7 +371,7 @@
           </div>
           
           <div class="col-md-6  p-4">
-            <form action="mailto:habeebkambrath@gmail.com" method="POST" enctype="multipart/form-data" id="contact-me-form">
+            <form id="submit-form">
               <div class="form-group row">
                 <label for="inputname" class="col-sm-2 col-form-label form-labels">Name</label>
                 <div class="col-sm-10">
@@ -429,6 +431,24 @@
 <script src="https://kit.fontawesome.com/30c7db20e9.js" crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script>
+  $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycbx6oO06QxJ0GpVB7BT5bIaiOAeKF39jp1lVEh9K/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Your Message Sent Successfully")
+              window.location.reload()
+              //window.location.href="https://google.com"
+          },
+          error:function (err){
+              alert("Something Error")
 
+          }
+      })
+  })
+</script>
 </body>
 </html>

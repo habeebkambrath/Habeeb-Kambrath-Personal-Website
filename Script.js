@@ -104,7 +104,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() { 
-    $("#contact-me-form").validate({
+    $("#submit-form").validate({
         rules:{
             fullname:{
                 required:true,
