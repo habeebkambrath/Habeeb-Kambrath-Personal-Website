@@ -162,6 +162,7 @@
 
 }
 #back2Top {
+    float: left;
     width: 40px;
     line-height: 40px;
     overflow: hidden;
@@ -273,9 +274,9 @@ label.error {
     margin-top:16px;
     
 }
-.whatsapp-button{
-    text-align: left;
-}
+
+
+
 
 
 
